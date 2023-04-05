@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeDo Todo Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer ></script>
+</head>
+<body>
+    
+    <header>
+        <h1>DeDo</h1>
+        <h2>The best Todo List to get your tasks done!</h2>
+
+    </header>
+
+  
+    <main>
+        <div class="control-panel"> 
+            <h3 class="project-now">Daily Tasks</h3>
+            <button class="delete-project">Delete This Project</button>
+        </div>
+       
+        <div class="tasks">
+            
+        </div>
+         
+        <div class="add-task">
+            
+            <label for="title" >Task Name:</label>
+            <input id="title" name="title" type="text">
+        
+            <label for="date">Due Date:</label>
+            <input type="date" name="date" id="date">
+        
+            <label for="desc">Description:</label>
+            <input type="textarea" id="desc" name="desc">
+        
+            <label for="prio">Priority</label>
+            <input type="range" name="prio" id="prio"  min="0" max="100" value="50">
+        
+            <label for="proj">Choose the project:</label>
+            <select id="proj" name="proj">
+                <option value="default">Default</option>
+            
+            </select>
+        
+            <button id="submit">Create</button>
+
+        </div>
+        
+        <div class="add-project">
+            <label for="new-project">Project Name:</label>
+            <input type="text" name="new-project" id="new-project">
+            <button id="add-button">ADD</button>
+
+        </div>
+
+
+    </main>
+
+    <aside>
+        <h4>Projects</h4>
+        <div class="projects">
+
+
+        </div>
+        <button class="create-project">New Project</button>
+        <button class="create-task">New Task</button>
+        <button class="clear-button">CLEAR!</button>
+    </aside>
+
+    <footer>
+
+        <h5>Designed by T4</h5>
+    </footer>
+
+
+</body>
+</html>
